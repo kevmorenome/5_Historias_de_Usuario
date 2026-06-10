@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Historias de Usuario — Guía Ágil</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── HERO ── -->
+  <header class="hero">
+    <div class="hero__badge">Metodologías Ágiles</div>
+    <h1 class="hero__title">Historias de <span class="hero__accent">Usuario</span></h1>
+    <p class="hero__subtitle">
+      La herramienta más poderosa para comunicar lo que el usuario realmente necesita,
+      con el lenguaje que todos entienden.
+    </p>
+    <a href="#definicion" class="hero__cta">Explorar el concepto ↓</a>
+  </header>
+
+  <main>
+
+    <!-- ── DEFINICIÓN ── -->
+    <section class="section" id="definicion">
+      <div class="container">
+        <span class="section__eyebrow">¿Qué son?</span>
+        <h2 class="section__title">Definición</h2>
+
+        <div class="definition-grid">
+          <div class="definition-card definition-card--primary">
+            <div class="definition-card__icon">📖</div>
+            <h3>Definición General</h3>
+            <p>
+              Una <strong>Historia de Usuario</strong> es una descripción corta y simple de una
+              funcionalidad del sistema, narrada desde la perspectiva del usuario final.
+              Captura <em>quién</em> necesita algo, <em>qué</em> necesita y <em>por qué</em> lo necesita.
+            </p>
+          </div>
+
+          <div class="definition-card">
+            <div class="definition-card__icon">💡</div>
+            <h3>Origen</h3>
+            <p>
+              Fueron introducidas por <strong>Kent Beck</strong> dentro de la metodología
+              <em>Extreme Programming (XP)</em> a finales de los 90 y popularizadas
+              por <strong>Scrum</strong> como la unidad básica del Product Backlog.
+            </p>
+          </div>
+
+          <div class="definition-card">
+            <div class="definition-card__icon">🎯</div>
+            <h3>Propósito</h3>
+            <p>
+              Facilitar la <strong>comunicación</strong> entre el equipo de desarrollo
+              y los stakeholders, evitando documentación extensa y promoviendo
+              conversaciones continuas sobre el valor que se entrega.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ESTRUCTURA ── -->
+    <section class="section section--alt" id="estructura">
+      <div class="container">
+        <span class="section__eyebrow">Anatomía</span>
+        <h2 class="section__title">Estructura de una Historia</h2>
+        <p class="section__lead">
+          Toda historia de usuario sigue una plantilla estándar de tres partes que garantiza claridad y trazabilidad.
+        </p>
+
+        <div class="template-card">
+          <div class="template-card__formula">
+            <div class="template-part template-part--who">
+              <span class="template-part__label">Como</span>
+              <span class="template-part__value">[tipo de usuario]</span>
+            </div>
+            <span class="template-connector">quiero</span>
+            <div class="template-part template-part--what">
+              <span class="template-part__label">Quiero</span>
+              <span class="template-part__value">[realizar una acción]</span>
+            </div>
+            <span class="template-connector">para</span>
+            <div class="template-part template-part--why">
+              <span class="template-part__label">Para</span>
+              <span class="template-part__value">[obtener un beneficio]</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="parts-grid">
+          <div class="part-item">
+            <div class="part-item__number">01</div>
+            <h4>¿Quién?</h4>
+            <p>Identifica el rol o tipo de usuario que se beneficia. Puede ser un cliente, administrador, visitante, etc.</p>
+          </div>
+          <div class="part-item">
+            <div class="part-item__number">02</div>
+            <h4>¿Qué?</h4>
+            <p>Describe la acción o funcionalidad concreta que el usuario quiere realizar en el sistema.</p>
+          </div>
+          <div class="part-item">
+            <div class="part-item__number">03</div>
+            <h4>¿Para qué?</h4>
+            <p>Expresa el valor o beneficio que el usuario obtiene al completar esa acción exitosamente.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CRITERIOS INVEST ── -->
+    <section class="section" id="invest">
+      <div class="container">
+        <span class="section__eyebrow">Buenas prácticas</span>
+        <h2 class="section__title">Criterios <span class="text-accent">INVEST</span></h2>
+        <p class="section__lead">
+          Una buena historia de usuario cumple los seis criterios del acrónimo <strong>INVEST</strong>,
+          propuesto por Bill Wake.
+        </p>
+
+        <div class="invest-grid">
+          <div class="invest-card">
+            <div class="invest-card__letter">I</div>
+            <h4>Independent</h4>
+            <p>Puede desarrollarse y entregarse de forma independiente de otras historias.</p>
+          </div>
+          <div class="invest-card">
+            <div class="invest-card__letter">N</div>
+            <h4>Negotiable</h4>
+            <p>Los detalles de implementación son negociables entre el equipo y el cliente.</p>
+          </div>
+          <div class="invest-card">
+            <div class="invest-card__letter">V</div>
+            <h4>Valuable</h4>
+            <p>Aporta valor real y tangible al usuario o al negocio.</p>
+          </div>
+          <div class="invest-card">
+            <div class="invest-card__letter">E</div>
+            <h4>Estimable</h4>
+            <p>El equipo puede estimar el esfuerzo requerido para implementarla.</p>
+          </div>
+          <div class="invest-card">
+            <div class="invest-card__letter">S</div>
+            <h4>Small</h4>
+            <p>Es lo suficientemente pequeña para completarse en un sprint o iteración.</p>
+          </div>
+          <div class="invest-card">
+            <div class="invest-card__letter">T</div>
+            <h4>Testable</h4>
+            <p>Tiene criterios de aceptación que permiten verificar si está completa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EJEMPLOS ── -->
+    <section class="section section--alt" id="ejemplos">
+      <div class="container">
+        <span class="section__eyebrow">En la práctica</span>
+        <h2 class="section__title">Ejemplos de Historias</h2>
+        <p class="section__lead">
+          Cada tarjeta representa una historia de usuario real con su plantilla, criterios de aceptación y contexto.
+        </p>
+
+        <div class="stories-grid">
+
+          <!-- Historia 1 -->
+          <article class="story-card story-card--blue">
+            <div class="story-card__context">🛒 E-commerce</div>
+            <div class="story-card__body">
+              <p class="story-card__text">
+                <strong>Como</strong> cliente registrado,
+                <strong>quiero</strong> guardar productos en una lista de deseos,
+                <strong>para</strong> poder comprarlos más adelante sin tener que buscarlos de nuevo.
+              </p>
+            </div>
+            <div class="story-card__footer">
+              <h5>Criterios de Aceptación</h5>
+              <ul>
+                <li>El usuario puede agregar y eliminar productos de su lista.</li>
+                <li>La lista persiste entre sesiones del usuario.</li>
+                <li>Se muestra el precio y disponibilidad actual del producto.</li>
+                <li>El usuario puede mover un ítem directamente al carrito de compras.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Historia 2 -->
+          <article class="story-card story-card--green">
+            <div class="story-card__context">🏦 Banca Digital</div>
+            <div class="story-card__body">
+              <p class="story-card__text">
+                <strong>Como</strong> usuario de la app bancaria,
+                <strong>quiero</strong> recibir una notificación push cada vez que se realice un movimiento en mi cuenta,
+                <strong>para</strong> detectar de inmediato cualquier transacción no autorizada.
+              </p>
+            </div>
+            <div class="story-card__footer">
+              <h5>Criterios de Aceptación</h5>
+              <ul>
+                <li>La notificación llega en menos de 10 segundos tras el movimiento.</li>
+                <li>Incluye monto, tipo de operación y saldo resultante.</li>
+                <li>El usuario puede desactivar las notificaciones desde configuración.</li>
+                <li>Funciona tanto en iOS como en Android.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Historia 3 -->
+          <article class="story-card story-card--purple">
+            <div class="story-card__context">🎓 Plataforma Educativa</div>
+            <div class="story-card__body">
+              <p class="story-card__text">
+                <strong>Como</strong> estudiante inscrito en un curso,
+                <strong>quiero</strong> descargar el material del módulo en PDF,
+                <strong>para</strong> estudiar sin necesidad de tener conexión a internet.
+              </p>
+            </div>
+            <div class="story-card__footer">
+              <h5>Criterios de Aceptación</h5>
+              <ul>
+                <li>El botón de descarga aparece solo en módulos desbloqueados.</li>
+                <li>El archivo descargado mantiene el formato y las imágenes originales.</li>
+                <li>El tamaño del archivo no supera los 20 MB.</li>
+                <li>Se muestra una barra de progreso durante la descarga.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Historia 4 -->
+          <article class="story-card story-card--orange">
+            <div class="story-card__context">🏥 Sistema de Salud</div>
+            <div class="story-card__body">
+              <p class="story-card__text">
+                <strong>Como</strong> médico tratante,
+                <strong>quiero</strong> consultar el historial clínico completo de un paciente desde el portal,
+                <strong>para</strong> tomar decisiones informadas sin depender de registros físicos.
+              </p>
+            </div>
+            <div class="story-card__footer">
+              <h5>Criterios de Aceptación</h5>
+              <ul>
+                <li>El historial carga en menos de 3 segundos.</li>
+                <li>Se muestran consultas, diagnósticos y medicamentos previos.</li>
+                <li>El acceso requiere autenticación con doble factor.</li>
+                <li>Los registros de acceso quedan auditados en el sistema.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BUENO VS MALO ── -->
+    <section class="section" id="comparacion">
+      <div class="container">
+        <span class="section__eyebrow">Errores comunes</span>
+        <h2 class="section__title">¿Bien o mal escrita?</h2>
+        <p class="section__lead">Comparemos cómo una misma idea puede estar bien o mal expresada como historia.</p>
+
+        <div class="compare-grid">
+          <div class="compare-card compare-card--bad">
+            <div class="compare-card__header">
+              <span class="compare-card__icon">✗</span>
+              <h4>Historia Deficiente</h4>
+            </div>
+            <blockquote>
+              "El sistema debe permitir que los usuarios hagan cosas con sus datos en la plataforma de manera eficiente."
+            </blockquote>
+            <ul class="compare-card__issues">
+              <li>No especifica qué tipo de usuario.</li>
+              <li>"Hacer cosas" es demasiado vago.</li>
+              <li>No expresa ningún valor concreto.</li>
+              <li>Imposible de estimar o testear.</li>
+            </ul>
+          </div>
+
+          <div class="compare-card compare-card--good">
+            <div class="compare-card__header">
+              <span class="compare-card__icon">✓</span>
+              <h4>Historia Bien Escrita</h4>
+            </div>
+            <blockquote>
+              "Como administrador, quiero exportar el reporte de ventas mensual en formato Excel, para analizarlo en mi herramienta de BI."
+            </blockquote>
+            <ul class="compare-card__issues">
+              <li>Rol claro: administrador.</li>
+              <li>Acción específica: exportar en Excel.</li>
+              <li>Valor evidente: análisis en BI.</li>
+              <li>Fácil de estimar y verificar.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">
+        Guía sobre <strong>Historias de Usuario</strong> · Metodologías Ágiles
+      </p>
+      <p class="footer__sub">Scrum · XP · Kanban · SAFe</p>
+    </div>
+  </footer>
+
+</body>
+</html>
